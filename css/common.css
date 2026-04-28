@@ -55,3 +55,22 @@ body{
   font-size: var(--body--m-plus);
   line-height: var(--base-unit);
 }
+
+/* 링크 버튼 */
+.btn{
+  height: 39px;
+  background: var(--super--light--gray);
+  border-radius: 3px;
+  padding: 0 20px;
+  display: inline-flex;
+  color: var(--medium--gray);
+  align-items: center;
+  font-size: calc(var(--base-font) * 0.875);
+  font-weight: bold;
+  gap: 5px;
+  text-transform: uppercase;
+}
+.btn-primary{
+  background: var(--primary);
+  color: var(--secondary);
+}
