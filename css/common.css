@@ -153,6 +153,13 @@ form button{
   height: 1px;
   overflow: hidden;
 }
+hr{
+  border: none;
+  /* border-top: 1px solid var(--super--light--gray); */
+  height: 1px;
+  background: var(--super--light--gray);
+}
+
 
 /* 헤더 */
 body > header{
