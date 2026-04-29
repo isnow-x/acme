@@ -33,6 +33,7 @@
 
 body{
   font-family: "Open Sans", sans-serif;
+  font-size: var(--base-font);
 }
 /* 폰트 위계 */
 .text-heading-xl{
@@ -73,4 +74,44 @@ body{
 .btn-primary{
   background: var(--primary);
   color: var(--secondary);
+}
+
+/* 폼 요소 */
+.hero{
+  background: var(--hero);
+}
+form{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+form .field{
+  height: calc(var(--base-unit) * 2);
+  background: var(--white);
+  border-radius: 3px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  color: var(--light--gray);
+}
+form .field input{
+  font-style: italic;
+  color: var(--black);
+}
+form .field input::placeholder{
+  color: var(--super--light--gray);
+}
+form button{
+  height: calc(var(--base-unit) * 2);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: calc(var(--base-font) * 1.125);
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid var(--white);
 }

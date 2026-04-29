@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
@@ -35,7 +36,7 @@
   <h2>버튼 링크</h2>
   <!-- Link -->
   <a href="#" class="text-link">Link Text</a>
-  <a href="#" class="btn btn-primary">Link Text</a>
+  <a href="#" class="btn btn-primary"><span class="material-icons">lock</span></a>
   <a href="#" class="btn btn-secondary">Link Text</a>
   
   <!-- Button -->
@@ -43,6 +44,23 @@
   <button class="btn btn-secondary">Secondary Button</button>
 
   <h2>폼요소</h2>
+  <div class="hero">
+    <form action="">
+      <div class="field">
+        <label for="useremail">
+          <span class="material-icons">lock</span>
+        </label>
+        <input type="text" id="useremail" placeholder="placeholder text">
+      </div>
+      <div class="field">
+        <label for="useremail">
+          <span class="material-icons">lock</span>
+        </label>
+        <input type="text" id="useremail" placeholder="placeholder text">
+      </div>
+      <button type="submit">Submit button</button>
+    </form>
+  </div>
   <h2>레이아웃</h2>
 </body>
 </html>
