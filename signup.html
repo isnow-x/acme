@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - ACME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/sign.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container d-flex justify-content-center align-items-center">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="acme logo" />
+            <span class="hidden">ACME</span>
+          </a>
+        </h1>
+      </div>
+    </header>
+    <main>
+      <section class="hero inner-pd">
+        <div class="container d-flex flex-column align-items-center g-1">
+          <h2 class="text-heading-xl">create your free account</h2>
+          <form action="">
+            <div class="field">
+              <label for="username">
+                <span class="material-icons">person</span>
+              </label>
+              <input type="text" id="username" placeholder="Name" />
+            </div>
+            <div class="field">
+              <label for="useremail">
+                <span class="material-icons">email</span>
+              </label>
+              <input type="text" id="useremail" placeholder="Email address" />
+            </div>
+            <div class="field">
+              <label for="userpw">
+                <span class="material-icons">lock</span>
+              </label>
+              <input type="text" id="userpw" placeholder="password" />
+            </div>
+            <div class="field">
+              <label for="userpwcf">
+                <span class="material-icons">lock</span>
+              </label>
+              <input type="text" id="userpwcf" placeholder="Confirm password" />
+            </div>
+            <button type="submit">create account</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="inner-pd text-center">
+      <a href="" class="text-link">Already have an account? Sign In</a>
+    </footer>
+  </body>
+</html>
