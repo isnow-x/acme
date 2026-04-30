@@ -19,3 +19,6 @@
 .g-2 {
   gap: calc(var(--base-unit) * 2);
 }
+.text-center {
+  text-align: center;
+}
