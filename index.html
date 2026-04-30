@@ -1,87 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ACME</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-  <header>
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="acme logo">
-          <span class="hidden">ACME</span>
-        </a>
-      </h1>
-      <nav>
-        <ul class="d-flex align-items-center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="acme logo" />
+            <span class="hidden">ACME</span>
+          </a>
+        </h1>
+        <nav>
+          <ul class="d-flex align-items-center">
+            <li>
+              <a href="#" class="text-nav">home</a>
+              /
+              <a href="#" class="text-nav">about</a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-secondary"
+                ><span class="material-icons">lock</span>sign in</a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn btn-primary">sign up for free</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero inner-top-pd">
+        <div class="container d-flex flex-column align-items-center g-1">
+          <h2 class="text-heading-xl">Portfolio Manager</h2>
+          <h3 class="text-body-l">It's awesome. And it's FREE!</h3>
+          <a href="#" class="btn btn-primary big">sign up for free</a>
+          <img src="images/hero_image.png" alt="" />
+        </div>
+      </section>
+      <section class="features container inner-pd">
+        <h2 class="hidden">Features</h2>
+        <ul class="d-flex justify-content-between">
           <li>
-            <a href="#" class="text-nav">home</a>
-            /
-            <a href="#" class="text-nav">about</a>
+            <div class="icon">
+              <span class="material-icons">person</span>
+            </div>
+            <h3 class="text-heading-s">This is a feature title</h3>
+            <p class="text-body-m">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore minima totam
+              incidunt exercitationem officia corrupti debitis rem porro.
+            </p>
           </li>
           <li>
-            <a href="#" class="btn btn-secondary"><span class="material-icons">lock</span>sign in</a>
+            <div class="icon">
+              <span class="material-icons">list</span>
+            </div>
+            <h3 class="text-heading-s">This is a feature title</h3>
+            <p class="text-body-m">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore minima totam
+              incidunt exercitationem officia corrupti debitis rem porro.
+            </p>
           </li>
           <li>
-            <a href="#" class="btn btn-primary">sign up for free</a>
+            <div class="icon">
+              <span class="material-icons">star</span>
+            </div>
+            <h3 class="text-heading-s">This is a feature title</h3>
+            <p class="text-body-m">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore minima totam
+              incidunt exercitationem officia corrupti debitis rem porro.
+            </p>
           </li>
         </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="hero inner-top-pd">
-      <div class="container d-flex flex-column align-items-center g-1">
-        <h2 class="text-heading-xl">Portfolio Manager</h2>
-        <h3 class="text-body-l">It's awesome. And it's FREE!</h3>
-        <a href="#" class="btn btn-primary big">sign up for free</a>
-        <img src="images/hero_image.png" alt="">
-      </div>
-    </section>
-    <section class="features container inner-pd ">
-      <h2 class="hidden">Features</h2>
-      <ul class="d-flex justify-content-between">
-        <li>
-          <div class="icon">
-            <span class="material-icons">person</span>
-          </div>
-          <h3 class="text-heading-s">This is a feature title</h3>
-          <p class="text-body-m">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore minima totam incidunt exercitationem officia corrupti debitis rem porro. 
-          </p>
-        </li>
-        <li>
-          <div class="icon">
-            <span class="material-icons">list</span>
-          </div>
-          <h3 class="text-heading-s">This is a feature title</h3>
-          <p class="text-body-m">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore minima totam incidunt exercitationem officia corrupti debitis rem porro. 
-          </p>
-        </li>
-        <li>
-          <div class="icon">
-            <span class="material-icons">star</span>
-          </div>
-          <h3 class="text-heading-s">This is a feature title</h3>
-          <p class="text-body-m">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore minima totam incidunt exercitationem officia corrupti debitis rem porro. 
-          </p>
-        </li>
-      </ul>
-    </section>
-    <hr class="container">
-    <section class="testimonial container inner-pd"></section>
-    <section class="cta inner-pd"></section>
-  </main>
-  <footer class="cta inner-pd"></footer>
-</body>
+      </section>
+      <hr class="container" />
+      <section class="testimonial slidewrapper container inner-pd">
+        <h2 class="hidden">testimonial</h2>
+        <ul class="slidecontainer">
+          <li>
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam quam
+                recusandae molestias magni accusantium
+              </p>
+            </blockquote>
+            <small>jane</small>
+          </li>
+          <li>
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam quam
+                recusandae molestias magni accusantium
+              </p>
+            </blockquote>
+            <small>john</small>
+          </li>
+          <li>
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam quam
+                recusandae molestias magni accusantium
+              </p>
+            </blockquote>
+            <small>bonnie</small>
+          </li>
+        </ul>
+        <button type="button" class="button prev">
+          <span class="material-icons">chevron_left</span>
+        </button>
+        <button type="button" class="button next">
+          <span class="material-icons">chevron_right</span>
+        </button>
+      </section>
+      <section class="cta inner-pd"></section>
+    </main>
+    <footer class="cta inner-pd"></footer>
+  </body>
 </html>
