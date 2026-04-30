@@ -56,6 +56,7 @@ body {
   font-size: var(--body--l);
   line-height: var(--base-unit);
   font-weight: 300;
+  text-align: center;
 }
 .text-body-m {
   font-size: var(--body--m);
@@ -64,6 +65,8 @@ body {
 .text-body-m-plus {
   font-size: var(--body--m-plus);
   line-height: var(--base-unit);
+  text-align: center;
+  color: var(--light--gray);
 }
 .text-nav {
   font-size: var(--nav--item);
@@ -210,4 +213,12 @@ header nav ul li:first-child {
 }
 .slidewrapper button.next {
   right: 0;
+}
+
+/* CTA */
+.cta {
+  background: var(--c-t-a);
+}
+.cta h3 {
+  color: var(--white);
 }

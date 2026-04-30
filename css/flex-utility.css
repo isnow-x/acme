@@ -1,18 +1,21 @@
-.d-flex{
+.d-flex {
   display: flex;
 }
-.flex-column{
+.flex-column {
   flex-direction: column;
 }
-.justify-content-center{
+.justify-content-center {
   justify-content: center;
 }
-.justify-content-between{
+.justify-content-between {
   justify-content: space-between;
 }
-.align-items-center{
+.align-items-center {
   align-items: center;
 }
-.g-1{
-  gap:var(--base-unit);
+.g-1 {
+  gap: var(--base-unit);
+}
+.g-2 {
+  gap: calc(var(--base-unit) * 2);
 }
