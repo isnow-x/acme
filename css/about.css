@@ -1,0 +1,38 @@
+.qnalist {
+  width: 750px;
+  margin: 0 auto;
+}
+.qnalist li.active .question span {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+.qnalist .question {
+  display: flex;
+  height: calc(var(--base-unit) * 2);
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--super--light--gray);
+}
+
+.qnalist .question span {
+  opacity: 0.2;
+  color: #000;
+  transition: 0.35s;
+}
+.qnalist .answer {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  flex-direction: column;
+  gap: 27px;
+  transition: 0.3s;
+}
+.qnalist li.active .question {
+  font-weight: bold;
+}
+.qnalist li.active .answer {
+  height: auto;
+  padding: 20px 20px 30px;
+}
