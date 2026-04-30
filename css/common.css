@@ -120,9 +120,17 @@ form .field {
   align-items: center;
   color: var(--light--gray);
 }
+form .field label {
+  display: flex;
+}
 form .field input {
   font-style: italic;
   color: var(--black);
+  width: 100%;
+  outline: none;
+}
+form .field:focus-within {
+  box-shadow: inset 0 0 5px rgba(72, 0, 255, 0.7);
 }
 form .field input::placeholder {
   color: var(--super--light--gray);

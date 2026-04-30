@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signin - ACME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/sign.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container d-flex justify-content-center align-items-center">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="acme logo" />
+            <span class="hidden">ACME</span>
+          </a>
+        </h1>
+      </div>
+    </header>
+    <main>
+      <section class="hero inner-pd">
+        <div class="container d-flex flex-column align-items-center g-1">
+          <h2 class="text-heading-xl">sign in</h2>
+          <form action="">
+            <div class="field">
+              <label for="useremail">
+                <span class="material-icons">email</span>
+              </label>
+              <input type="text" id="useremail" placeholder="Email address" />
+            </div>
+            <div class="field">
+              <label for="useremail">
+                <span class="material-icons">lock</span>
+              </label>
+              <input type="text" id="useremail" placeholder="password" />
+            </div>
+            <button type="submit">sign in</button>
+          </form>
+          <a href="" class="text-link">I forgot my password</a>
+        </div>
+      </section>
+    </main>
+    <footer class="inner-pd d-flex flex-column align-items-center g-2">
+      <div class="content d-flex flex-column g-1">
+        <h3 class="text-body-l">Don’t have an account yet?</h3>
+        <p class="text-body-m-plus">Create one now.</p>
+      </div>
+      <a href="#" class="btn btn-primary big">sign up for free</a>
+    </footer>
+  </body>
+</html>
