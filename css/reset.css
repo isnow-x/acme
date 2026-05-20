@@ -42,13 +42,13 @@ table {
 	border-spacing: 0;
 }
 a{
-  text-decoration: none;
-  color: inherit;
+  text-decoration:none;
+  color:inherit;
 }
 img{
-  vertical-align: top;
+  vertical-align:top;
 }
 button, input{
   background: none;
-  border: none;
+  border:none;
 }

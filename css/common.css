@@ -1,6 +1,7 @@
 @import url("normalize.css");
 @import url("reset.css");
 @import url("flex-utility.css");
+
 :root {
   /* Layout */
   --base-unit: 27px;
@@ -8,16 +9,16 @@
 
   /* Color styles */
   --black: rgba(44, 44, 44, 1);
-  --medium--gray: rgba(110, 110, 110, 1);
   --light--gray: rgba(168, 168, 168, 1);
+  --medium--gray: rgba(110, 110, 110, 1);
   --super--light--gray: rgba(235, 235, 235, 1);
   --primary: rgba(154, 199, 91, 1);
   --secondary: rgba(85, 118, 44, 1);
   --white: rgba(255, 255, 255, 1);
   --hero: rgba(45, 62, 79, 1);
-  --hero-title: rgba(58, 153, 216, 1);
-  --medium--blue: rgba(67, 156, 207, 1);
-  --light--blue: rgba(72, 157, 205, 1);
+  --hero--title: rgba(58, 153, 216, 1);
+  --medium-blue: rgba(67, 156, 207, 1);
+  --light-blue: rgba(72, 157, 205, 1);
   --c-t-a: rgba(41, 44, 46, 1);
 
   /* Text-size styles */
@@ -34,34 +35,39 @@
 
 body {
   /* font-family: "Open Sans", sans-serif;
-  font-size: var(--base-font);
-  line-height: var(--base-unit); */
+  font-size:var(--base-font);
+  line-height:var(--base-unit); */
   font:
-    var(--base-font)/var(--base-font) "Open Sans",
+    var(--base-font)/var(--base-unit) "Open Sans",
     sans-serif;
 }
+
 /* 폰트 위계 */
 .text-heading-xl {
   font-size: var(--heading--x-l);
   line-height: calc(var(--base-unit) * 3);
-  color: var(--hero-title);
+  color: var(--hero--title);
   text-transform: uppercase;
   letter-spacing: 2%;
 }
+
 .text-heading-s {
   font-size: var(--heading--s);
   line-height: var(--base-unit);
 }
+
 .text-body-l {
   font-size: var(--body--l);
-  line-height: var(--base-unit);
+  line-height: calc(var(--base-unit) * 2);
   font-weight: 300;
   text-align: center;
 }
+
 .text-body-m {
   font-size: var(--body--m);
   line-height: var(--base-unit);
 }
+
 .text-body-m-plus {
   font-size: var(--body--m-plus);
   line-height: var(--base-unit);
@@ -73,7 +79,6 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 /* 링크 버튼 */
 .btn {
   height: 39px;
@@ -110,7 +115,6 @@ form {
   flex-direction: column;
   gap: 10px;
 }
-
 form .field {
   height: calc(var(--base-unit) * 2);
   background: var(--white);
@@ -147,7 +151,6 @@ form button {
   font-weight: bold;
   border: 1px solid var(--white);
 }
-
 /* 레이아웃 */
 .container {
   width: 1272px;
@@ -166,17 +169,18 @@ form button {
   height: 1px;
   overflow: hidden;
 }
+
 hr {
   border: none;
-  /* border-top: 1px solid var(--super--light--gray); */
+  /* border-top:1px solid var(--super--light--gray); */
   height: 1px;
   background: var(--super--light--gray);
 }
+
 .text-link {
   text-decoration: underline;
   color: var(--primary);
 }
-
 section .header {
   margin-bottom: calc(var(--base-unit) * 2);
 }
@@ -186,7 +190,15 @@ body > header {
   background: var(--white);
   padding: var(--base-unit) 0;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  transition: 0.3s ease-out;
 }
+
+body > header.fixed {
+  padding: calc(var(--base-unit) / 2) 0;
+}
+
 header nav ul {
   gap: 10px;
 }
@@ -215,7 +227,6 @@ header nav ul li:first-child {
   width: 700px;
   text-align: center;
 }
-
 .slidewrapper button {
   width: 45px;
   height: 45px;

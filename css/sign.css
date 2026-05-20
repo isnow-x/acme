@@ -6,7 +6,7 @@
   padding: 20px;
   color: #f30000;
   border-radius: 3px;
-  background-color: var(--white);
+  background: var(--white);
   position: absolute;
   left: calc(100% + 30px);
   top: 0;
@@ -17,8 +17,8 @@
 .feedback:after {
   content: "";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-width: 7px 8px;
   border-style: solid;
   border-color: transparent #fff transparent transparent;
@@ -27,16 +27,14 @@
 }
 
 .box {
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-width: 5px 10px;
   border-style: solid;
   margin: 1rem auto;
 }
 .box1 {
   /* border: 10px solid red; */
-  border-width: 10px;
-  border-style: solid;
   border-color: red;
 }
 .box2 {
