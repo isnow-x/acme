@@ -153,7 +153,8 @@ form button {
 }
 /* 레이아웃 */
 .container {
-  width: 1272px;
+  max-width: 1272px;
+  width: 100%;
   margin: 0 auto;
 }
 .inner-pd {

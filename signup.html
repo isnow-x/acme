@@ -30,36 +30,33 @@
       <section class="hero inner-pd">
         <div class="container d-flex flex-column align-items-center g-1">
           <h2 class="text-heading-xl">create your free account</h2>
-          <form action="">
+          <form action="#" novalidate>
             <div class="field">
               <label for="useremail">
                 <span class="material-icons">person</span>
               </label>
-              <input type="text" id="useremail" placeholder="Name" />
+              <input type="text" id="username" placeholder="Name" required />
             </div>
             <div class="field">
               <label for="useremail">
                 <span class="material-icons">email</span>
               </label>
-              <input type="text" id="useremail" placeholder="Email address" />
+              <input type="text" id="useremail" placeholder="Email address" required />
             </div>
             <div class="field">
               <label for="userpw">
                 <span class="material-icons">lock</span>
               </label>
-              <input type="text" id="userpw" placeholder="password" />
+              <input type="password" id="userpw" placeholder="password" required />
             </div>
             <div class="field">
               <label for="userpwcf">
                 <span class="material-icons">lock</span>
               </label>
-              <input type="text" id="userpwcf" placeholder="password confirm" />
+              <input type="password" id="userpwcf" placeholder="password confirm" required />
             </div>
             <button type="submit">create Account</button>
-            <div class="feedback">
-              <p>Oops, it seems you haven't entered your name yet.</p>
-              <p>This is required.</p>
-            </div>
+            <div class="feedback"></div>
           </form>
           <a href="" class="text-link">I forgot my password</a>
         </div>
@@ -71,5 +68,6 @@
     <div class="box box1"></div>
     <div class="box box2"></div>
     <div class="box box3"></div>
+    <script src="js/sign.js"></script>
   </body>
 </html>
